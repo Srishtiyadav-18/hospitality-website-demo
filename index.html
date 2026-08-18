@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="A personal hospitality website demo showcasing short-term accommodation, responsive design, basic SEO, and guest enquiry features.">
+<title>Hospitality Website Demo | Short-Term Accommodation</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><nav class="nav">
+<div class="logo">Hospitality Website Demo</div>
+<div class="links"><a href="#stays">Stays</a><a href="#experience">Experience</a><a href="#contact">Enquire</a></div>
+</nav></header>
+
+<main>
+<section class="hero"><div>
+<p class="eyebrow">HOSPITALITY WEBSITE DEMO</p>
+<h1>Comfortable stays, thoughtfully presented.</h1>
+<p class="hero-text">A personal demo website created to showcase responsive design, hospitality-focused content, basic SEO and an enquiry experience.</p>
+<a class="button" href="#contact">Check availability</a>
+</div></section>
+
+<section id="stays" class="section">
+<p class="eyebrow">OUR STAYS</p><h2>Simple spaces for a comfortable stay</h2>
+<div class="cards">
+<article class="card"><div class="card-image">CITY STAY</div><div class="card-content"><h3>City Apartment</h3><p>A comfortable accommodation concept designed for convenient short stays and city visits.</p><a href="#contact">Enquire →</a></div></article>
+<article class="card"><div class="card-image">BUSINESS STAY</div><div class="card-content"><h3>Business-Friendly Stay</h3><p>A practical option for working visitors looking for a comfortable place to relax after a busy day.</p><a href="#contact">Enquire →</a></div></article>
+<article class="card"><div class="card-image">WEEKEND STAY</div><div class="card-content"><h3>Weekend City Break</h3><p>A convenient base for guests exploring food, culture, shopping and entertainment.</p><a href="#contact">Enquire →</a></div></article>
+</div></section>
+
+<section id="experience" class="location section">
+<div><p class="eyebrow">THE EXPERIENCE</p><h2>Designed around the guest.</h2><p>This hospitality demo focuses on clear information, simple navigation, responsive design and an easy enquiry journey for short-term guests.</p></div>
+<div class="features"><span>✓ Clear property information</span><span>✓ Responsive layout</span><span>✓ Guest-focused content</span><span>✓ Simple enquiry process</span></div>
+</section>
+
+<section id="contact" class="contact section">
+<p class="eyebrow">GET IN TOUCH</p><h2>Planning a stay?</h2><p>Send an enquiry and we'll get back to you with availability.</p>
+<form onsubmit="submitForm(event)"><input type="text" placeholder="Your name" required><input type="email" placeholder="Email address" required><input type="text" placeholder="Preferred dates"><textarea placeholder="Tell us what you need"></textarea><button class="button" type="submit">Send enquiry</button></form>
+<p id="form-message" class="form-message"></p>
+</section>
+</main>
+<footer><p>Hospitality Website Demo — Personal Demo Project</p></footer>
+<script>function submitForm(e){e.preventDefault();document.getElementById("form-message").textContent="Thank you. This is a demo enquiry form created for the application project.";}</script>
+</body></html>
